@@ -1,0 +1,744 @@
+* {
+    box-sizing: border-box
+}
+
+a {
+    text-decoration: none !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'iran';
+    background-color: #ffffff;
+}
+
+@font-face {
+    src: url("../font/IRANSansWeb.ttf");
+    font-family: 'iran';
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    box-shadow: 0 2px 10px #dddddd;
+}
+
+nav ul {
+    display: inline;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 50px;
+    padding-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: dimgray;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: cornflowerblue;
+}
+
+/************************ start slider **********************/
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+    height: 700px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 90%;
+    height: 600px;
+    position: relative;
+    margin: 20px auto;
+    box-shadow: 2px 2px 10px 2px #dddddd;
+    overflow: hidden;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #e2e0e0;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #757575;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}
+
+/************************ end slider **********************/
+
+
+/************************ start body **********************/
+
+.onvan {
+    width: 90%;
+    height: 50px;
+    border-bottom: 1px solid #dddddd;
+    margin: 0 auto;
+}
+
+.onvan p {
+    line-height: 50px;
+}
+
+.section {
+    width: 98%;
+    height: auto;
+    margin: 20px auto;
+    text-align: center;
+    align-items: center;
+}
+
+.section .div {
+    width: 20%;
+    height: 350px;
+    display: inline-block;
+    margin: 20px 23px;
+    box-shadow: 2px 2px 10px 2px #dddddd;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.section .div:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 20px 2px #cccccc;
+    transition: 0.3s;
+}
+
+.div .image-box {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.image-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.text-box {
+    width: 100%;
+    height: 70px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.text-box p {
+    color: dimgrey;
+    font-size: 14px;
+}
+
+.price-box {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    text-align: left;
+}
+
+.price-box p {
+    font-size: 13px
+}
+
+.price-box sapn {
+    color: #ffffff;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+/************************ end body **********************/
+
+
+/************************ start footer **********************/
+
+footer {
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    box-shadow: 2px 0 10px #dddddd;
+}
+
+.div-footer {
+    width: 30%;
+    height: 250px;
+    display: inline-block;
+    margin: 0px 20px;
+    text-align: justify;
+}
+
+.div-footer p {
+    font-size: 13px;
+    padding: 0 10px;
+    color: #5d5d5d;
+    font-weight: 100;
+    margin-top: 30px;
+}
+
+.footer-bot {
+    width: 100%;
+    background-color: #12a1ee;
+    height: 50px;
+    color: #ffffff;
+}
+
+.footer-bot p {
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    left: 0;
+}
+
+/************************ end footer **********************/
+
+
+/************************ start login page **********************/
+.sighn {
+    width: 40%;
+    height: auto;
+    box-shadow: 2px 2px 10px 2px #cccccc;
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.login {
+    width: 40%;
+    height: auto;
+    box-shadow: 2px 2px 10px 2px #cccccc;
+    margin: 20px auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.login-top {
+    width: 100%;
+    height: 100px;
+    background-color: #12a1ee;
+}
+
+.login-top span {
+    color: #ffffff;
+    line-height: 100px;
+    font-size: 16px;
+}
+
+.login-bot {
+    width: 90%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.login-bot input {
+    width: 100%;
+    border-radius: 3px;
+    padding: 8px;
+    border: 1px solid #dddddd;
+    margin-top: 20px;
+    font-family: 'iran';
+}
+
+.login-bot input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+    -moz-appearance: checkbox;
+    appearance: checkbox;
+    display: inline-block;
+    width: auto;
+}
+
+.login-bot label {
+    font-size: 14px;
+    position: relative;
+    top: -3px;
+}
+
+.login-bot button {
+    border: none;
+    margin: 20px 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    font-family: 'iran';
+    background-color: #ffffff;
+    color: #4f4d4d;
+    box-shadow: 2px 2px 8px 2px #b0afaf;
+}
+
+/************************ end login page **********************/
+
+
+/************************ start page **********************/
+.det-product {
+    width: 90%;
+    height: 80px;
+    box-shadow: 2px 2px 8px 2px #dddddd;
+    margin: 20px auto;
+    background-color: #ffffff;
+}
+
+.det-product p {
+    line-height: 80px;
+    margin-right: 20px;
+    font-weight: 600;
+    color: #696969;
+}
+
+.pic-box {
+    width: 90%;
+    height: 380px;
+    box-shadow: 2px 2px 8px 2px #dddddd;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+.pic-product {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.pic-product img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.desc-product {
+    width: 48%;
+    height: 340px;
+    float: left;
+    opacity: 0.8;
+    padding: 10px 20px;
+    text-align: center;
+    background-color: #12a1ee;
+    /*background-image: url("../image/blog-img1-the-3d-photo-editor-for-your-honor-view20.jpg");*/
+}
+
+.desc-product p {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    font-size: 14px;
+    color: #ffffff;
+    display: block;
+}
+
+.desc-product button:active {
+    margin-top: 21px;
+}
+
+.desc-product button {
+    border: none;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    font-family: 'iran';
+    background-color: #ffffff;
+    color: #4f4d4d;
+    box-shadow: 2px 2px 8px 2px #b0afaf;
+    cursor: pointer;
+}
+
+.tabligh {
+    width: 90%;
+    height: 80px;
+    box-shadow: 2px 2px 8px 2px #dddddd;
+    margin: 0 auto;
+    background-image: url(../image/e-commerce-pattern.gif);
+}
+
+.onvan1 {
+    width: 90%;
+    height: 50px;
+    box-shadow: 2px 2px 10px 2px #dddddd;
+    margin: 20px auto;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.onvan1 h4 {
+    line-height: 50px;
+    color: #6b6b6b;
+}
+
+.descrip-pro {
+    width: 90%;
+    height: auto;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 8px 2px #dddddd;
+    margin: 20px auto;
+    text-align: justify;
+    background-color: #ffffff;
+}
+
+.descrip-pro p {
+    color: #6b6b6b;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.dop-pro {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.dop-pro .div {
+    width: 21%;
+    height: 350px;
+    display: inline-block;
+    margin: 20px 20px;
+    box-shadow: 2px 2px 10px 2px #dddddd;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.dop-pro .div:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 20px 2px #cccccc;
+    transition: 0.3s;
+}
+
+/************************ end page **********************/
+
+
+/************************ start comment **********************/
+.comment {
+    width: 90%;
+    height: auto;
+    padding-bottom: 10px;
+    box-shadow: 2px 2px 8px 2px #dddddd;
+    background-color: #12a1ee;
+    margin: 20px auto;
+}
+
+.comment .box {
+    width: 98%;
+    background-color: #ffffff;
+    height: 50px;
+    margin: 10px auto;
+}
+
+.comment .box span {
+    line-height: 50px;
+    font-size: 13px;
+    margin-right: 20px;
+}
+
+
+.comment .boxcom {
+    width: 98%;
+    background-color: #2d8cdf;
+    height: 50px;
+    margin: 10px auto;
+}
+
+.comment .boxcom span {
+    line-height: 50px;
+    font-size: 13px;
+    margin-right: 20px;
+    color: #ffffff;
+}
+
+
+/************************ end commet **********************/
+table {
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+table th {
+    font-size: 14px;
+    border-bottom: 1px solid #dddddd;
+    height: 50px;
+}
+
+table td {
+    height: 40px;
+    font-size: 12px;
+    border: none;
+}
+
+table a {
+    color: red;
+    text-decoration: none;
+}
+
+.container {
+    width: 60%;
+    height: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    margin: 30px auto;
+    text-align: center;
+    align-items: center;
+}
+
+
+/*alert*/
+.alert {
+    width: 100%;
+    height: 50px;
+    display: block;
+    border-radius: 4px;
+
+}
+
+.alert.alert-danger {
+    background-color: #ffbcb7;
+    color: #a63736;
+    line-height: 50px;
+
+}
+
+.alert.alert-success {
+    background-color: #b8f3bf;
+    color: #009a3b;
+    line-height: 50px;
+
+}
+
+/*end alert*/
+
+.g-recaptcha {
+    margin-top: 20px;
+}
+
+.btn-registerd {
+    width: 100%;
+    background-color: #7cc7ff;
+    height: 35px;
+    display: block;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    margin: 10px 0 20px;
+    color: white;
+
+}
+
+
+.sendComment {
+    width: 90%;
+    height: 300px;
+    box-shadow: 2px 2px 20px 2px #cccccc;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.sendComment2 {
+    width: 90%;
+    height: 200px;
+    box-shadow: 2px 2px 20px 2px #cccccc;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.sendComment .right {
+    float: right;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+
+.sendComment2 .right {
+    float: right;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+.sendComment .right input {
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    font-family: 'iran';
+}
+
+.sendComment .right textarea {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    font-family: 'iran';
+    margin-top: 10px;
+}
+
+.sendComment2 .right textarea {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    font-family: 'iran';
+    margin-top: 10px;
+}
+
+.sendComment .right input, textarea::placeholder {
+    font-size: 13px;
+}
+
+.sendComment2 .right input, textarea::placeholder {
+    font-size: 13px;
+}
+
+textarea {
+    resize: none;
+}
+
+.sendComment .right button {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'iran';
+    margin-top: 10px;
+    background-color: #12a1ee;
+    color: #ffffff;
+}
+
+.sendComment2 .right button {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'iran';
+    margin-top: 10px;
+    background-color: #12a1ee;
+    color: #ffffff;
+}
+
+.sendComment .left {
+    float: left;
+    display: inline-block;
+    width: 48%;
+    height: 257px;
+    background-color: #cce5ff;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: right;
+    overflow: hidden;
+    border: 1px solid #b8daff;
+}
+
+.sendComment .left li {
+    font-size: 13px;
+    margin-right: 20px;
+    color: #007bff;
+    margin-top: 18px;
+}
+
+/************************ END PAGE **********************/
+.btn-info {
+    padding: 3px 10px;
+    margin: 0 3px;
+    background-color: #12a1ee;
+    display: inline-block;
+    border-radius: 3px;
+    color: white;
+}
+
+.btn-danger {
+    padding: 3px 10px;
+    margin: 0 3px;
+    background-color: #d41f20;
+    display: inline-block;
+    border-radius: 3px;
+    color: white;
+}
+
+
+
